@@ -1,0 +1,17 @@
+Pseudoscope of BFS
+======================
+
+Input -> Connect Graph and a "source"
+Output -> Traverse all nodes and print the traversal order
+
+
+BFS(graph, source):
+- Initiative an array called "visited" and an empty queue "q"
+- Mark visited[source] = 1 and q.push(source)
+- while node is not empty:
+    - head = q.front()
+    - q.pop()
+    - print the node "head"
+    - for all adjacent nodes of 'head':
+        - if visited[adjacent_node] == 0:
+            - visited[adjacent_node] = 1 and q.push(adjacent_node)
